@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "moonveil-deobfuscator"
+version = "0.11.0"
+description = "MoonVeil v1.4.5 devirtualizer and readable Luau reconstructor"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "MoonVeil deobfuscator contributors"}]
+dependencies = []
+
+[project.scripts]
+moonveil = "moonveil.cli:main"
+moonveil-gui = "moonveil.gui:main"
+
+[tool.setuptools.packages.find]
+include = ["moonveil*"]
